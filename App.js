@@ -20,7 +20,7 @@ export default function App() {
        />
        <FlatList
        data={DATA}
-       keyExtractor={(item) => item.id}
+       keyExtractor={item => item.index_id}
        renderItem={({ item }) =>
           <CardQuote
           background={item.background}
