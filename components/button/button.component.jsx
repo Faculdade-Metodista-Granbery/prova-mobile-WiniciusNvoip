@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     }
   });
 
-//ícone pause https://image.flaticon.com/icons/png/512/27/27340.png
 const ButtonComponent = () => {
 
     return (
