@@ -38,23 +38,18 @@ const CardQuote = ({background,task}) => {
             <Card.Cover
                 style={styles.cover}
                 resizeMode={`cover`}
-                source={{ uri: background }} />
+                source={{ uri: background }} 
+            />
                 <ButtonComponent/>
-            <Card.Content style={styles.content}>
-            </Card.Content>
+                <Card.Content style={styles.content}>
+                </Card.Content>
             <Card.Actions>
                 <View style={styles.view}>
-                <Paragraph>
-                <Text
-                        style={styles.task}
-                    >
+                    <Paragraph>
+                        <Text style={styles.task}>
                             {task}
-                    </Text>
-                    <Image
-                    resizeMode={`center`}
-                    source={'https://img-premium.flaticon.com/png/512/151/151860.png?token=exp=1622398038~hmac=f5c122cf3a4d8210fd004a244b606c57'}
-                     />
-                </Paragraph>
+                        </Text>
+                    </Paragraph>
                 </View>
             </Card.Actions>
         </Card>

@@ -30,20 +30,20 @@ const ButtonComponent = () => {
   }
 
     return (
-        <View style={styles.container}>
+      <View style={styles.container}>
           <TouchableOpacity activeOpacity = {.3} onPress={handleIcon}>
-        <Image
-          style={styles.iconStyle}
-          accessibilityLabel= {labelIcon}
-          resizeMode={`center`}
-          source={{
-            uri: stateIcon ? 
-            'https://img-premium.flaticon.com/png/512/151/151860.png?token=exp=1622398038~hmac=f5c122cf3a4d8210fd004a244b606c57' 
-            : 
-            'https://img-premium.flaticon.com/png/512/565/565258.png?token=exp=1622398124~hmac=1ac714dc65269aeebe85a26b22b25cce',
-          }}
-        />
-        </TouchableOpacity>
+            <Image
+              style={styles.iconStyle}
+              accessibilityLabel= {labelIcon}
+              resizeMode={`center`}
+              source={{
+                uri: stateIcon ? 
+                  'https://img-premium.flaticon.com/png/512/151/151860.png?token=exp=1622398038~hmac=f5c122cf3a4d8210fd004a244b606c57' 
+                  : 
+                  'https://img-premium.flaticon.com/png/512/565/565258.png?token=exp=1622398124~hmac=1ac714dc65269aeebe85a26b22b25cce',
+              }}
+              />
+          </TouchableOpacity>
       </View>
     );
 }
