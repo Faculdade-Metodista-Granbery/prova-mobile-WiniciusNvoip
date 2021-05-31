@@ -7,9 +7,10 @@ const styles = StyleSheet.create({
       paddingTop: 5,
     },
     iconStyle: {
-      width: 30,
-      height: 30,
+      width: 50,
+      height: 50,
       marginLeft: '9rem', 
+      tintColor: '#4D1117',
     },
 
   });
@@ -19,7 +20,7 @@ const ButtonComponent = () => {
   const [stateIcon, setStateIcon] = useState(true);
   const [labelIcon, setLabelIcon] = useState('Ícone de player!');
 
-  const handleIcon = () => {
+  const exchangeIcon  = () => {
     if (stateIcon) {
       setStateIcon(false);
       setLabelIcon('Ícone de pause!');
@@ -31,7 +32,7 @@ const ButtonComponent = () => {
 
     return (
       <View style={styles.container}>
-          <TouchableOpacity activeOpacity = {.3} onPress={handleIcon}>
+          <TouchableOpacity activeOpacity = {.3} onPress={exchangeIcon}>
             <Image
               style={styles.iconStyle}
               accessibilityLabel= {labelIcon}

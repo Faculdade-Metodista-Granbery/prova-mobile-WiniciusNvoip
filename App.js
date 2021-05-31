@@ -10,6 +10,7 @@ const DATA = [
   { id: 3, task: '5 séries de namastê', background: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6OUSY2144YwI6mFLlxCKdyvkmKn6yLEoLA&usqp=CAU'},
 ]
 
+
 export default function App() {
   return (
 
